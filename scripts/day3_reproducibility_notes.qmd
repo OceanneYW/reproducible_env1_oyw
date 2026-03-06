@@ -1,0 +1,15 @@
+---
+title: "day3_reproducibility_notes"
+format: html
+editor: visual
+---
+
+## R Environment Setup
+
+```{r something interesting}
+#| eval: false
+
+# Hmmmm what to put here
+system("echo ':)' ")
+
+```
