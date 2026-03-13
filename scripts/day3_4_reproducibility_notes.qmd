@@ -48,3 +48,14 @@ docker pull --platform linux/amd64 staphb/quast:5.3.0
 
 # Reason to use quast: Quast is a widely used tool for assessing the quality of genome assemblies. It provides comprehensive metrics such as N50, L50, total length, and misassembly rates, which are crucial for evaluating the completeness and accuracy of the assembly. Using Quast allows us to benchmark our assembly against reference genomes and identify areas for improvement in our assembly pipeline.
 ```
+
+OceanneYW (The Histogram Expert)
+
+```{r data wrangling}
+b_data <- read.csv("yeast_genome_metadata.csv")
+head(b_data)
+
+
+b_wrangled <- b_data %>% 
+  filter(gc_content < 40)
+```
