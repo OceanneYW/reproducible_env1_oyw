@@ -35,6 +35,16 @@ write.csv(yeast_metadata, "yeast_genome_metadata.csv", row.names = FALSE)
 
 ## Conda & Docker Environment Setup
 
-```{bash}
 
+
+```{bash docker doardo partner B}
+docker pull --platform linux/amd64 nanoporetech/dorado:latest
+
+# Reason to use dorado: Dorado is a basecalling tool developed by Oxford Nanopore Technologies that is optimized for their sequencing data. It uses advanced algorithms to convert raw signal data from nanopore sequencing into accurate nucleotide sequences. Using Dorado allows us to leverage the latest improvements in basecalling accuracy, which can significantly enhance the quality of our downstream analyses, such as assembly and variant calling.
+```
+
+```{bash docker quast partner A}
+docker pull --platform linux/amd64 staphb/quast:5.3.0
+
+# Reason to use quast: Quast is a widely used tool for assessing the quality of genome assemblies. It provides comprehensive metrics such as N50, L50, total length, and misassembly rates, which are crucial for evaluating the completeness and accuracy of the assembly. Using Quast allows us to benchmark our assembly against reference genomes and identify areas for improvement in our assembly pipeline.
 ```
