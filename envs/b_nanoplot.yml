@@ -1,0 +1,10 @@
+name: b_nanoplot
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - nanoplot
+prefix: /Users/owang/opt/anaconda3/envs/b_nanoplot
